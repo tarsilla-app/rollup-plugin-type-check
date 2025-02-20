@@ -1,6 +1,6 @@
 {
   "name": "@tarsilla/rollup-plugin-type-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "node": ">=22"
   },
@@ -25,8 +25,9 @@
   "scripts": {
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
+    "tsc": "tsc --noEmit",
     "clean": "rm -rf ./lib",
-    "build": "npm run clean && npm run lint && tsc --noEmit && rollup -c",
+    "build": "npm run clean && npm run lint && npm run tsc && rollup -c",
     "prepub": "npm run build",
     "pub": "npm publish --access public"
   },
@@ -35,7 +36,7 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-swc": "^0.4.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@tarsilla/eslint-config": "^0.0.37",
+    "@tarsilla/eslint-config": "^0.0.39",
     "rollup": "^4.34.8",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",

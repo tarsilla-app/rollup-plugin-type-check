@@ -22,7 +22,13 @@ const configs = [
         exports: 'auto',
       },
     ],
-    plugins: [peerDepsExternal(), nodeResolve({ extensions: ['.ts'] }), commonjs(), typescript(), terser()],
+    plugins: [
+      peerDepsExternal({ includeDependencies: true }),
+      nodeResolve({ extensions: ['.ts'] }),
+      commonjs(),
+      typescript(),
+      terser(),
+    ],
   },
   {
     input: `./src/index.ts`,
