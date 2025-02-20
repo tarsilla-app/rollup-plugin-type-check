@@ -1,6 +1,6 @@
 {
   "name": "@tarsilla/rollup-plugin-type-check",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "engines": {
     "node": ">=22"
   },
@@ -36,7 +36,7 @@
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-swc": "^0.4.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@tarsilla/eslint-config": "^0.0.41",
+    "@tarsilla/eslint-config": "^0.0.42",
     "rollup": "^4.34.8",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",

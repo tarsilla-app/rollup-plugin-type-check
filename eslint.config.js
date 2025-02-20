@@ -1,6 +1,6 @@
-import { library } from '@tarsilla/eslint-config/library';
+import { eslintLibraryConfig } from '@tarsilla/eslint-config/library';
 
-const config = library({
+const config = eslintLibraryConfig({
   ignores: ['**/.vscode/', '**/node_modules/', '**/lib/'],
 });
 
