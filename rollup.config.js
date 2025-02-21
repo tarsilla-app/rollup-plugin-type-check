@@ -26,7 +26,13 @@ const configs = [
       peerDepsExternal({ includeDependencies: true }),
       nodeResolve({ extensions: ['.ts'] }),
       commonjs(),
-      typescript(),
+      typescript({
+        jsc: {
+          parser: {
+            syntax: 'typescript',
+          },
+        },
+      }),
       terser(),
     ],
   },
