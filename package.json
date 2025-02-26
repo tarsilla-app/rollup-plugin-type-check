@@ -1,6 +1,6 @@
 {
   "name": "@tarsilla/rollup-plugin-type-check",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "engines": {
     "node": ">=22"
   },
