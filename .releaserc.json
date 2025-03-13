@@ -25,7 +25,9 @@
     [
       "@semantic-release/npm",
       {
-        "tag": "latest"
+        "tag": "latest",
+        "npmPublish": true,
+        "optional": false
       }
     ],
     [
