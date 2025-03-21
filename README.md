@@ -1,4 +1,4 @@
-# rollup-plugin-type-check
+# @tarsilla/rollup-plugin-type-check
 
 A Rollup plugin that performs a TypeScript type check during the build process. This plugin leverages the TypeScript compiler (`tsc`) to ensure that your codebase is type-safe without generating any output files.
 
@@ -14,10 +14,31 @@ A Rollup plugin that performs a TypeScript type check during the build process. 
 npm install --save-dev @tarsilla/rollup-plugin-type-check
 ```
 
+or
+
+```sh
+yarn add --dev @tarsilla/rollup-plugin-type-check
+```
+
 ## Usage
 
 In your Rollup configuration (see rollup.config.js), add the plugin to your plugins array:
+```js
+import { rollupPluginTypeCheck } from '@tarsilla/rollup-plugin-type-check';
+ 
+export default {
+  // ...existing configuration...
+  plugins: [
+    // ...other plugins...
+    rollupPluginTypeCheck();
+  ],
+};
+```
 
+
+## Configuration Options
+
+Alternatively, if you want to use the default TypeScript configuration, simply add the plugin without options:
 ```js
 import { rollupPluginTypeCheck } from '@tarsilla/rollup-plugin-type-check';
  
@@ -28,12 +49,6 @@ export default {
     rollupPluginTypeCheck({ tsconfig: 'tsconfig.json' }),
   ],
 };
-```
-
-Alternatively, if you want to use the default TypeScript configuration, simply add the plugin without options:
-
-```js
-rollupPluginTypeCheck();
 ```
 
 ## Options
