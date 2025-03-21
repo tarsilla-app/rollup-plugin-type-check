@@ -35,10 +35,18 @@ export default {
 };
 ```
 
-
 ## Configuration Options
 
-Alternatively, if you want to use the default TypeScript configuration, simply add the plugin without options:
+You can override default settings by creating passing options to the plugin.
+The plugin accepts an object of type `RollupTypeCheckOptions`:
+
+| Option   | Type   | Description                                                  | Default     |
+|----------|--------|--------------------------------------------------------------|-------------|
+| tsconfig | string | Path to your custom `tsconfig.json`. If not provided, the plugin will run with the default compiler settings. | `undefined` |
+
+
+Example: 
+
 ```js
 import { rollupPluginTypeCheck } from '@tarsilla/rollup-plugin-type-check';
  
@@ -50,14 +58,6 @@ export default {
   ],
 };
 ```
-
-## Options
-
-The plugin accepts an options object of type `RollupTypeCheckOptions`:
-
-| Option   | Type   | Description                                                  | Default     |
-|----------|--------|--------------------------------------------------------------|-------------|
-| tsconfig | string | Path to your custom `tsconfig.json`. If not provided, the plugin will run with the default compiler settings. | `undefined` |
 
 ## How It Works
 

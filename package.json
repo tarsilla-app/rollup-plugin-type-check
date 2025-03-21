@@ -43,10 +43,10 @@
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-swc": "^0.4.0",
     "@rollup/plugin-terser": "^0.4.4",
-    "@tarsilla/commit-wizard": "^1.0.1",
-    "@tarsilla/eslint-config": "^1.0.3",
+    "@tarsilla/commit-wizard": "^1.0.5",
+    "@tarsilla/eslint-config": "^1.0.5",
     "husky": "^9.1.7",
-    "rollup-plugin-dts": "^6.2.0",
+    "rollup-plugin-dts": "^6.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "typescript": "^5.8.2"
   }
